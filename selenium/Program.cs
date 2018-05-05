@@ -16,7 +16,12 @@ namespace selenium
         static void Main(string[] args)
         {
             try { meth1(); }
-            catch(Exception ex) { Console.WriteLine(ex.StackTrace); }
+            catch (Exception ex) { Console.WriteLine(ex.StackTrace); }
+
+            Console.WriteLine("MY APP");
+//#if DEBUG
+//            Console.WriteLine("hello there ,this is DEBUG code");
+//#endif
             Console.ReadKey();
         }
 
@@ -33,7 +38,14 @@ namespace selenium
     }
         // driver.TakeScreenshot().SaveAsFile(@"C:\Users\desktop\error.jpg",ScreenshotImageFormat.Jpeg);
 
-    
+    struct abc
+    {
+        int a;
+    }
+    class trialclass
+    {
+
+    }
 }
     
   
