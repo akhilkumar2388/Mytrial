@@ -44,6 +44,8 @@ namespace selenium
     }
     class trialclass
     {
+        int a;
+
 
     }
 }
