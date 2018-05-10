@@ -15,39 +15,33 @@ namespace selenium
     {
         static void Main(string[] args)
         {
-            try { meth1(); }
-            catch (Exception ex) { Console.WriteLine(ex.StackTrace); }
+            int[] a = new int[];
+            for(int i=0;i<30;i++)
+            {
+                a[i]=i;
 
-            Console.WriteLine("MY APP");
-//#if DEBUG
-//            Console.WriteLine("hello there ,this is DEBUG code");
-//#endif
+
+            }
             Console.ReadKey();
         }
-
-         public static void meth1()
-        {
-            try { meth2(); }
-            catch (Exception ex) { throw ex; }
-        }
-        public static void meth2()
-        {
-            try { throw new Exception("trial exception"); }
-            catch (Exception ex) { throw; }
-        }
     }
-        // driver.TakeScreenshot().SaveAsFile(@"C:\Users\desktop\error.jpg",ScreenshotImageFormat.Jpeg);
-
-    struct abc
+    abstract class class1
     {
-        int a;
+
     }
-    class trialclass
+    abstract class class2
     {
-        int a;
-
 
     }
+   abstract class class3:class1
+    {
+
+    }
+
+        
+
+   
+   
 }
     
   
